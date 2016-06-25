@@ -1,5 +1,6 @@
 package com.likitana.vaccin.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -36,15 +37,14 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void getDataFomApi() {
-        homeObject.add(new Home("Vaccination Définition", R.mipmap.ic_image_healing));
-        homeObject.add(new Home("Liste Vaccins", R.mipmap.ic_image_colorize));
-        homeObject.add(new Home("Vaccination voyage", R.mipmap.ic_image_healing));
-        homeObject.add(new Home("Actualité vaccins", R.mipmap.ic_image_straighten));
-        homeObject.add(new Home("Calendrier vaccinal", R.mipmap.ic_image_timer));
-        homeObject.add(new Home("Abbréviations utilisées", R.mipmap.ic_image_colorize));
-        homeObject.add(new Home("Mon dossier famille", R.mipmap.ic_image_healing));
-        homeObject.add(new Home("Mon profil", R.mipmap.ic_image_straighten));
-        homeObject.add(new Home("A propos", R.mipmap.ic_image_healing));
+        homeObject.add(new Home("Vaccination Définition", R.mipmap.ic_retire));
+        homeObject.add(new Home("Liste Vaccins", R.mipmap.ic_hospital));
+        homeObject.add(new Home("Vaccination voyage", R.mipmap.ic_pharmacy));
+        homeObject.add(new Home("Actualité vaccins", R.mipmap.ic_info));
+        homeObject.add(new Home("Calendrier vaccinal", R.mipmap.ic_hospital));
+        homeObject.add(new Home("Abbréviations utilisées", R.mipmap.ic_retire));
+        homeObject.add(new Home("Mon dossier famille", R.mipmap.ic_info));
+        homeObject.add(new Home("Mon profil", R.mipmap.ic_pharmacy));
     }
 
 
@@ -59,6 +59,9 @@ public class HomeActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
+            return true;
+        } else if (id == R.id.action_about) {
+            startActivity(new Intent(getApplicationContext(), AboutActivity.class));
             return true;
         }
 

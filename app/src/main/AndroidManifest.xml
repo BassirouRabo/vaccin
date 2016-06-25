@@ -50,13 +50,14 @@
                 android:value="com.likitana.vaccin.activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".activity.VaccinsCalendrierActivity"
+            android:name=".activity.CalendriersActivity"
             android:label="@string/title_activity_vaccins_calendrier"
-            android:parentActivityName=".activity.HomeActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.PaysActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.likitana.vaccin.activity.HomeActivity" />
+                android:value="com.likitana.vaccin.activity.PaysActivity" />
         </activity>
         <activity
             android:name=".activity.AbbreviationsActivity"
@@ -140,6 +141,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.likitana.vaccin.activity.ActualitesActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CalendrierActivity"
+            android:label="@string/title_activity_calendrier"
+            android:parentActivityName=".activity.CalendriersActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CalendriersActivity" />
         </activity>
     </application>
 

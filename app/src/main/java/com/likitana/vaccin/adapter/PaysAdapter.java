@@ -4,17 +4,21 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.likitana.vaccin.R;
 import com.likitana.vaccin.holder.PaysHolder;
 import com.likitana.vaccin.object.Pays;
+
 import java.util.List;
 
 
 public class PaysAdapter  extends RecyclerView.Adapter<PaysHolder>{
     List<Pays> list;
+    String page;
 
-    public PaysAdapter(List<Pays> list) {
+    public PaysAdapter(List<Pays> list, String reference) {
         this.list = list;
+        this.page = reference;
     }
 
     @Override
@@ -27,6 +31,7 @@ public class PaysAdapter  extends RecyclerView.Adapter<PaysHolder>{
     public void onBindViewHolder(PaysHolder paysHolder, int position) {
         Pays pays = list.get(position);
         paysHolder.bind(pays);
+        pays.setPage(page);
         paysHolder.itemView.setTag(pays);
     }
 

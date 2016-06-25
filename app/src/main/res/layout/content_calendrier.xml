@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/transparent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.likitana.vaccin.activity.VaccinsCalendrierActivity"
-    tools:showIn="@layout/activity_vaccins_calendrier">
+    tools:context="com.likitana.vaccin.activity.CalendrierActivity"
+    tools:showIn="@layout/activity_calendrier">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>

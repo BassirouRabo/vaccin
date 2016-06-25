@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparent"
-    android:paddingTop="@dimen/activity_horizontal_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.AbbreviationsActivity"
-    tools:showIn="@layout/activity_abbreviations">
+    tools:context=".activity.CalendriersActivity"
+    tools:showIn="@layout/activity_calendriers">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

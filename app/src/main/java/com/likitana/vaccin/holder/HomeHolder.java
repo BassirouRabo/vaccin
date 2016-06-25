@@ -5,8 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.likitana.vaccin.R;
-import com.likitana.vaccin.activity.AboutActivity;
 import com.likitana.vaccin.activity.AbbreviationsActivity;
 import com.likitana.vaccin.activity.ActualitesActivity;
 import com.likitana.vaccin.activity.MonDossierFamilleActivity;
@@ -14,8 +14,6 @@ import com.likitana.vaccin.activity.MonProfilActivity;
 import com.likitana.vaccin.activity.PaysActivity;
 import com.likitana.vaccin.activity.VaccinationDefinitionActivity;
 import com.likitana.vaccin.activity.VaccinsActivity;
-import com.likitana.vaccin.activity.VaccinsCalendrierActivity;
-import com.likitana.vaccin.activity.VaccinsVoyageActivity;
 import com.likitana.vaccin.object.Home;
 import com.squareup.picasso.Picasso;
 
@@ -51,13 +49,17 @@ public class HomeHolder extends RecyclerView.ViewHolder implements View.OnClickL
                 v.getContext().startActivity(new Intent(v.getContext(), VaccinsActivity.class));
                 break;
             case "Vaccination voyage":
-                v.getContext().startActivity(new Intent(v.getContext(), PaysActivity.class));
+                Intent intentVaccinationVoyage = new Intent(v.getContext(), PaysActivity.class);
+                intentVaccinationVoyage.putExtra("page", "Vaccination voyage");
+                v.getContext().startActivity(intentVaccinationVoyage);
                 break;
             case "Actualité vaccins":
                 v.getContext().startActivity(new Intent(v.getContext(), ActualitesActivity.class));
                 break;
             case "Calendrier vaccinal":
-                v.getContext().startActivity(new Intent(v.getContext(), VaccinsCalendrierActivity.class));
+                Intent intentCalendrierVaccinal = new Intent(v.getContext(), PaysActivity.class);
+                intentCalendrierVaccinal.putExtra("page", "Calendrier vaccinal");
+                v.getContext().startActivity(intentCalendrierVaccinal);
                 break;
             case "Abbréviations utilisées":
                 v.getContext().startActivity(new Intent(v.getContext(), AbbreviationsActivity.class));
@@ -67,9 +69,6 @@ public class HomeHolder extends RecyclerView.ViewHolder implements View.OnClickL
                 break;
             case "Mon profil":
                 v.getContext().startActivity(new Intent(v.getContext(), MonProfilActivity.class));
-                break;
-            case "A propos":
-                v.getContext().startActivity(new Intent(v.getContext(), AboutActivity.class));
                 break;
         }
     }

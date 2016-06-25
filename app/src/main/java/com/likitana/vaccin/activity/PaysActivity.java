@@ -5,15 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
 import com.likitana.vaccin.R;
 import com.likitana.vaccin.adapter.PaysAdapter;
 import com.likitana.vaccin.object.Pays;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PaysActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<Pays> pays = new ArrayList<>();
+    private String page;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +27,10 @@ public class PaysActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        page = getIntent().getStringExtra("page");
 
-        if (savedInstanceState == null) {
+
+        if (savedInstanceState == null && page != null) {
             recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -46,7 +51,7 @@ public class PaysActivity extends AppCompatActivity {
             pays.add(new Pays("Bangladesh"));
             pays.add(new Pays("Belgique"));
 
-            recyclerView.setAdapter(new PaysAdapter(pays));
+            recyclerView.setAdapter(new PaysAdapter(pays, page));
         }
     }
 
