@@ -23,6 +23,7 @@
         <activity
             android:name=".activity.VaccinsActivity"
             android:label="@string/title_activity_vaccins"
+            android:launchMode="singleTop"
             android:parentActivityName=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -32,11 +33,11 @@
         <activity
             android:name=".activity.VaccinsVoyageActivity"
             android:label="@string/title_activity_vaccins_voyage"
-            android:parentActivityName=".activity.HomeActivity"
+            android:parentActivityName=".activity.VaccinsVoyageTypeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.likitana.vaccin.activity.HomeActivity" />
+                android:value="com.likitana.vaccin.activity.VaccinsVoyageTypeActivity" />
         </activity>
         <activity
             android:name=".activity.ActualitesActivity"
@@ -57,7 +58,7 @@
                 android:value="com.likitana.vaccin.activity.HomeActivity" />
         </activity>
         <activity
-            android:name=".activity.AbreviationsActivity"
+            android:name=".activity.AbbreviationsActivity"
             android:label="@string/title_activity_abreviations"
             android:parentActivityName=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -100,6 +101,35 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VaccinActivity"
+            android:label="@string/title_activity_vaccin"
+            android:parentActivityName=".activity.VaccinsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.VaccinsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PaysActivity"
+            android:label="@string/title_activity_pays"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VaccinsVoyageTypeActivity"
+            android:label="@string/title_activity_vaccins_voyage_type"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activity.PaysActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.PaysActivity" />
         </activity>
     </application>
 

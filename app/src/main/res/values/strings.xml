@@ -6,7 +6,7 @@
     <string name="title_activity_vaccins_voyage">Vaccination voyage</string>
     <string name="title_activity_actualites">Actualites</string>
     <string name="title_activity_vaccins_calendrier">Calendrier vaccinal</string>
-    <string name="title_activity_abreviations">Abréviation</string>
+    <string name="title_activity_abreviations">Abbréviation</string>
     <string name="title_activity_mon_dossier_famille">Mon dossier famille</string>
     <string name="title_activity_mon_profil">Mon profil</string>
     <string name="title_activity_about">A propos</string>
@@ -16,4 +16,7 @@
     <string name="vaccin_type_3">Ces vaccins sont constitués des molécules de surface provenant des agents infectieux afin d\'obtenir des réponses immunitaires sans avoir à conserver, inactiver et introduire le virus concerné.</string>
     <string name="vaccin_type_4">Début mai 2008, Denis Leclerc a proposé20 d\'utiliser un virus végétal (qui ne peut se reproduire chez l\'homme) comme pseudovirion jouant le rôle d\'adjuvant, pour rendre des vaccins plus longuement efficaces contre des virus qui mutent souvent (virus de la grippe ou de l\'hépatite C, voire contre certains cancers).\n\nLe principe est d\'associer à ce pseudovirion une protéine-cible interne aux virus, bactéries ou cellules cancéreuses à attaquer, et non comme on le fait jusqu\'ici une des protéines externes qui sont celles qui mutent le plus.\n\nCe nouveau type de vaccin, qui doit encore faire les preuves de son innocuité et de son efficacité, déclencherait une réaction immunitaire à l\'intérieur des cellules, au moment de la réplication virale.</string>
     <string name="title_activity_vaccination_definition">Vaccination</string>
+    <string name="title_activity_vaccin">Vaccin</string>
+    <string name="title_activity_pays">Pays</string>
+    <string name="title_activity_vaccins_voyage_type">Vaccination voyage</string>
 </resources>

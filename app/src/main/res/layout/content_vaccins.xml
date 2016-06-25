@@ -1,94 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/transparent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.likitana.vaccin.activity.VaccinsActivity"
     tools:showIn="@layout/activity_vaccins">
-    
-    <LinearLayout
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="VACCINATION DÉFINITION"
-            android:gravity="center_horizontal"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vaccination"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TYPES DE VACCINS"
-            android:gravity="center_horizontal"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Vaccins issus d’agents infectieux inactivés"
-            android:textColor="@android:color/black"
-            android:padding="@dimen/activity_horizontal_margin"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vaccin_type_1"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Vaccins issus d’agents vivants atténués"
-            android:textColor="@android:color/black"
-            android:padding="@dimen/activity_horizontal_margin"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vaccin_type_2"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Vaccins synthétiques"
-            android:textColor="@android:color/black"
-            android:padding="@dimen/activity_horizontal_margin"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vaccin_type_3"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Vaccins constitués de toxines inactivées"
-            android:textColor="@android:color/black"
-            android:padding="@dimen/activity_horizontal_margin"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vaccin_type_4"/>
-
-    </LinearLayout>
-
-
-</ScrollView>
+</RelativeLayout>

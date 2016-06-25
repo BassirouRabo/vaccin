@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         homeObject.add(new Home("Vaccination voyage", R.mipmap.ic_image_healing));
         homeObject.add(new Home("Actualité vaccins", R.mipmap.ic_image_straighten));
         homeObject.add(new Home("Calendrier vaccinal", R.mipmap.ic_image_timer));
-        homeObject.add(new Home("Abréviations utilisées", R.mipmap.ic_image_colorize));
+        homeObject.add(new Home("Abbréviations utilisées", R.mipmap.ic_image_colorize));
         homeObject.add(new Home("Mon dossier famille", R.mipmap.ic_image_healing));
         homeObject.add(new Home("Mon profil", R.mipmap.ic_image_straighten));
         homeObject.add(new Home("A propos", R.mipmap.ic_image_healing));
