@@ -42,6 +42,7 @@
         <activity
             android:name=".activity.ActualitesActivity"
             android:label="@string/title_activity_actualites"
+            android:launchMode="singleTop"
             android:parentActivityName=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -130,6 +131,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.likitana.vaccin.activity.PaysActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ActualiteActivity"
+            android:label="@string/title_activity_actualite"
+            android:parentActivityName=".activity.ActualitesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.ActualitesActivity" />
         </activity>
     </application>
 

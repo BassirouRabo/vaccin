@@ -19,4 +19,5 @@
     <string name="title_activity_vaccin">Vaccin</string>
     <string name="title_activity_pays">Pays</string>
     <string name="title_activity_vaccins_voyage_type">Vaccination voyage</string>
+    <string name="title_activity_actualite">Actualité</string>
 </resources>
