@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.likitana.vaccin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Launch" />
+        <activity
+            android:name=".activity.VaccinsActivity"
+            android:label="@string/title_activity_vaccins"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VaccinsVoyageActivity"
+            android:label="@string/title_activity_vaccins_voyage"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ActualitesActivity"
+            android:label="@string/title_activity_actualites"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VaccinsCalendrierActivity"
+            android:label="@string/title_activity_vaccins_calendrier"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AbreviationsActivity"
+            android:label="@string/title_activity_abreviations"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MonDossierFamilleActivity"
+            android:label="@string/title_activity_mon_dossier_famille"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MonProfilActivity"
+            android:label="@string/title_activity_mon_profil"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.VaccinationDefinitionActivity"
+            android:label="@string/title_activity_vaccination_definition"
+            android:parentActivityName=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.likitana.vaccin.activity.HomeActivity" />
+        </activity>
+    </application>
+
+</manifest>
